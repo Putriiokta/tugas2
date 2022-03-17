@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Dasboard Perpustakaan </title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i>
+      <span class="logo_name">My library</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="#" class="active">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Members</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-box' ></i>
+            <span class="links_name">Books</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Report</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="profile-details">
+        <img src="images/putrii.jpeg" alt="">
+        <span class="admin_name">Putri Hap</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="home-content">
+      <div class="sales-boxes">
+        <h1 style="margin-left: 22px;">Favorite Book's</h1>
+      </div>
+
+      <div class="overview-boxes" style="margin-top: 10px;">
+        <div class="box">
+          <div class="right-side" style="text-align: center;">
+            <div class="box-topic">The Paper Palace</div>
+            <img src="images/satu.jpg" style="width: 100px; height: auto; margin-top: 10px;;">
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="right-side" style="text-align: center;">
+            <div class="box-topic">Klara and The Sun</div>
+            <img src="images/KlaraanTheSun.jpg" style="width: 100px; height: auto; margin-top: 10px;;">
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="right-side" style="text-align: center;">
+            <div class="box-topic">One Last Stop</div>
+            <img src="images/OneLastStop.jpg" style="width: 100px; height: auto; margin-top: 10px;;">
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="right-side" style="text-align: center;">
+            <div class="box-topic">Afterparties</div>
+            <img src="images/Afterparties.jpg" style="width: 100px; height: auto; margin-top: 10px;;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="sales-boxes">
+        <div class="recent-sales box">
+          <div class="title">Recent Member borrow</div>
+          <hr>
+          <div class="sales-details">
+            <ul class="details">
+              <li class="topic">Member's name</li>
+              <li><a href="#">Alex Doe</a></li>
+              <li><a href="#">David Mart</a></li>
+              <li><a href="#">Roe Parter</a></li>
+            </ul>
+            <ul class="details">
+            <li class="topic">Date</li>
+            <li><a href="#">19 January 2022</a></li>
+            <li><a href="#">01 February 2022</a></li>
+            <li><a href="#">10 Maret 2022</a></li>
+          </ul>
+          <ul class="details">
+            <li class="topic">Book's name</li>
+            <li><a href="#">Afterparties</a></li>
+            <li><a href="#">Klara and The Sun</a></li>
+            <li><a href="#">One Last Stop</a></li>
+          </ul>
+          
+          </div>
+          
+        </div>
+        <div class="top-sales box">
+          <div class="title">Description Book</div>
+          <hr>
+          <div style="text-align: center; margin-top: 20px;;">
+            <div class="box-topic">The Paper Palace</div>
+            <img src="images/satu.jpg" style="width: 100px; height: auto; margin-top: 10px;">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+   let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+  sidebar.classList.toggle("active");
+  if(sidebar.classList.contains("active")){
+  sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+  sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+ </script>
+
+</body>
+</html>
